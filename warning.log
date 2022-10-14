@@ -1,0 +1,15 @@
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /home
+Not Found: /home/
+Internal Server Error: /demo/home/
+Traceback (most recent call last):
+  File "C:\projects\django\studies\logger\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\projects\django\studies\logger\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\projects\django\studies\logger\django_logging_tutorail\demo\views.py", line 13, in hello_reader
+    logger.warning('Homepage was accessed at '+str(datetime.datetime.now())+' hours!')
+NameError: name 'datetime' is not defined
+Homepage was accessed at 2022-10-14 04:05:55.588354 hours!
+Homepage was accessed at 2022-10-14 04:06:19.716051 hours!
